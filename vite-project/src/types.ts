@@ -12,8 +12,14 @@ export interface Task{
     duration:number;
     done:boolean;
 }
-
-export interface Response{
+export interface TaskCreatePayload{
+    title:string;
+    description?:string;
+    duration:number;
+    start_now?:boolean;
+    done?:boolean;
+}
+export interface AuthResponse{
     msg?:string;
     token?:string;
 }
